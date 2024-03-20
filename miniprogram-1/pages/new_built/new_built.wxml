@@ -1,0 +1,46 @@
+<form  bindsubmit="bindSubmit">
+<view class="container">
+  <view class="form_border">
+    <label>名字:</label>
+    <input name="userName"  placeholder="  请填写快递上的名字" />
+  </view>
+  <view class="form_border">
+    <label>电话:</label>
+    <input name="phoneNumber"  placeholder="  请填写联系号码" />
+  </view>
+  <view class="form_border">
+    <label>费用:</label>
+    <input name="getPrice" placeholder="  请填写酬劳费用" />
+  </view>
+  <view class="form_border">
+     <label>快递大小：</label>
+    <label>
+        <radio-group name="getSize">   
+            <radio value="小件">小件</radio>
+            <radio value="中件">中件</radio>
+            <radio value="大件">大件</radio>
+        </radio-group>
+    </label>
+  </view>
+  <view class="form_border">
+    <label>送达时间:</label>
+    <input name="getTime"  placeholder="  期望时间" />
+  </view>
+
+  <view class="form_border">
+    <label>取件码:</label>
+    <input name="getNumber"  placeholder="  请填写取件码" />
+  </view>
+  <view class="form_border">
+    <label>取件点:</label>
+    <input name="getAddress"  placeholder="  请填写取件地址" />
+  </view>
+  <view class="form_border">
+    <label>送件点:</label>
+    <input name="putAddress"  placeholder="  请填写送件地址" />
+  </view>
+</view>
+
+<button hover-class="hover-button" class="button" form-type="reset" style="margin-top: 20rpx;">重置订单</button>   
+<button hover-class="hover-button" class="button" form-type="submit" >提交订单</button>
+</form>

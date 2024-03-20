@@ -1,0 +1,109 @@
+/* pages/home/home.wxss */
+
+/*图片区域容器样式*/
+.img-box{
+  display:flex;
+  justify-content: space-around;
+}
+
+/*图片区域样式*/
+.img-box image{
+  width:100%
+}
+
+/*文本区域样式*/
+.text-box{
+  display: flex;
+  padding: 10rpx;
+  justify-content: space-between;
+  position: relative;
+}
+.line{
+  position: absolute;
+  left: 30rpx;
+  margin:auto;
+  width:10rpx;
+  height:40rpx;
+  background-color: #ffbc06;
+  border-radius: 20rpx;
+}
+.text{
+  position: absolute;
+  left:60rpx;
+  font-weight: bold;
+}
+
+/*按钮区域样式*/
+.button{
+  display: flex;/*弹性布局*/
+  flex-wrap: wrap;/*允许换行*/
+}
+
+.bnt1{
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 20rpx;
+  margin: 10rpx;
+  margin-left: 160rpx;
+  padding-left: 110rpx;
+  font-weight: bold;
+  box-shadow:0rpx 2rpx 5rpx 5rpx #c8c3c3;
+  border-radius: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bnt1img{
+  width: 20%;
+  height: 70%;
+  position: absolute;/*要约束所在位置的子元素的位置要设置成绝对*/
+  left: 30px;/* 调节靠左 */
+}
+
+.bnt2{
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 20rpx;
+  margin: 50rpx;
+  margin-left: 160rpx;
+  padding-left: 110rpx;
+  font-weight: bold;
+  box-shadow:0rpx 2rpx 5rpx 5rpx #c8c3c3;
+  border-radius: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bnt2img{
+  width: 20%;
+  height: 70%;
+  position: absolute;/*要约束所在位置的子元素的位置要设置成绝对*/
+  left: 30px;/* 调节靠左 */
+}
+
+.bnt3{
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 20rpx;
+  margin: 10rpx;
+  margin-left: 160rpx;
+  padding-left: 110rpx;
+  font-weight: bold;
+  box-shadow:0rpx 2rpx 5rpx 5rpx #c8c3c3;
+  border-radius: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bnt3img{
+  width: 20%;
+  height: 70%;
+  position: absolute;/*要约束所在位置的子元素的位置要设置成绝对*/
+  left: 30px;/* 调节靠左 */
+}

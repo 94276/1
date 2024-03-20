@@ -1,0 +1,50 @@
+/* pages/campusRunning/campusRunning.wxss */
+.container{
+  background-color: #fff;
+  width: 90%;
+  margin: 30rpx auto;
+  border-radius:30rpx;
+  box-shadow: 0 0 15rpx #a1a1a1;
+  padding:40rpx 25rpx 25rpx 25rpx;
+}
+
+.container .title{
+  text-align: center;
+}
+
+.container .type{
+  display: flex; 
+  flex-direction: row;
+  width: 180rpx;
+  height: 160rpx;
+  background-color: #b2fae8;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 40rpx;
+  border-radius: 20rpx;
+}
+
+.container .type .icon{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: -30rpx;
+  border-radius: 50%;
+  background-color: rgb(71, 71, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10rpx 10rpx #f3f3f3;
+}
+
+.container .type .icon image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.container .type .text{
+  margin-top: 80rpx;
+  color: rgb(71, 71, 255);
+  font-size: 35rpx;
+}

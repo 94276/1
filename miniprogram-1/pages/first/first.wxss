@@ -1,0 +1,73 @@
+/* pages/first/first.wxss */
+.scroll_view{
+  background-color: rgb(245, 245, 241);
+  white-space: nowrap;
+}
+
+.tab{
+  display: flex;
+  text-align: center;
+}
+
+.tab .tab_item{
+  height:90rpx;
+  display: inline-block;
+  line-height: 90rpx;
+  margin:0 auto;
+  padding: 0 20rpx;
+  flex:1;
+}
+.select{
+  color:#5b93ca;
+  border-bottom:4rpx solid #5192d3
+}
+
+.box1{
+  width: 90% ;
+  margin: 30rpx auto;
+  padding: 40rpx 20rpx;
+  line-height: 1.5;
+  background-color: rgb(245,245,247);
+  border-radius: 20rpx;
+  box-shadow: 2rpx 0 15rpx rgb(150, 149, 149);
+  color: rgb(66, 121, 187);
+}
+/* .buildTime{
+  margin-right: 60rpx;
+  line-height: 2.8;
+  text-align: center;
+} */
+.top{
+  display: flex;
+}
+
+.size{
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-right: 320rpx;
+}
+.buildTime{
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.bottom{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.money{
+  padding: 18rpx;
+  background-color:rgb(36,134,185);
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 37rpx;
+  color: white;
+}
+button{
+  margin: 0;
+  margin:0 10rpx;
+  width: 150rpx;
+  background-color: #395b7e;
+  color: white;
+  font-size: 37rpx;
+}
+

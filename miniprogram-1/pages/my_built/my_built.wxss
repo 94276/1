@@ -1,0 +1,57 @@
+/* pages/my_built/my_built.wxss */
+.order{
+  background-color:rgb(245, 245, 247);
+  width:85%;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin-top: 30rpx;
+  box-shadow: 4rpx 4rpx 8rpx rgba(0,0, 0, 0.5); 
+}
+
+.order .order_top{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ color: #2f65a8;
+ font-size: 35rpx;
+ line-height:53rpx;
+ 
+}
+.order .order_top .top_left{
+ display: flex;
+}
+
+.order .order_top .top_left .name{
+ display: flex;
+ flex-direction: column;
+ margin-left: 20rpx;
+}
+
+.order .order_content{ 
+ color: #2f65a8;
+ font-size: 35rpx;
+ line-height:53rpx;
+} 
+.order .order_bottom{ 
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 15rpx;
+} 
+.order .order_bottom .money{ 
+ color: rgb(255,102,102);
+ background-color:rgb(255,102,102,.3) ;
+ padding: 10rpx 25rpx;
+ border-radius: 10rpx;
+ font-size: 30rpx;
+ box-shadow: 4rpx 4rpx 8rpx rgba(0,0, 0, 0.3); 
+} 
+.order .order_bottom .accept{ 
+ color: #fff;
+ background-color:#2b4b6b;
+ padding: 15rpx 25rpx;
+ margin-left: 25rpx;
+ border-radius: 10rpx;
+ font-size: 30rpx;
+ box-shadow: 4rpx 4rpx 8rpx rgba(0,0, 0, 0.3);
+} 

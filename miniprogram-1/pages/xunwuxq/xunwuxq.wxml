@@ -1,0 +1,18 @@
+<!--pages/xunwuxq/xunwuxq.wxml-->
+<view>
+  <view class="lie">
+    <image src="{{detail.image}}" mode="aspectFill" ></image>
+    <view class="lie_hang" >{{detail.name}}</view>
+    <view class="hang">
+      <view class="hang_title">日期</view>
+      <view class="hang_content">{{detail.date}}</view>
+    </view>
+    <view class="hang">
+      <view class="hang_title">联系方式</view>
+      <view class="hang_content">{{detail.contact}}</view>
+    </view>
+    <view class="hang">
+      <view class="hang_content1">{{detail.note}}</view>
+    </view>
+  </view>
+</view>

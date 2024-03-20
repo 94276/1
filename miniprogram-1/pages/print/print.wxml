@@ -1,0 +1,44 @@
+<view class="container">
+<form bindsubmit="bindSubmit">
+  <view class="item">
+    <text>打印原件:</text>
+    <view class="addImage" bindtap="getImg">
+      <text wx:if="{{ !printImg }}">+</text>
+      <image wx:else src="{{ printImg }}"></image>
+    </view>
+  </view>
+  <view class="form_border">
+    <label>收件地址:</label>
+    <input name="getAdress"  placeholder="  请填写收件地址" />
+  </view>
+  <view class="form_border">
+    <label>页数:</label>
+    <input name="pageNum"  placeholder="  请输入页数" />
+  </view>
+  <view class="form_border">
+    <label>备注信息:</label>
+    <input name="remarks"  placeholder="  请填写您的备注" />
+  </view>
+  <view class="form_border">
+    <label>是否彩印:</label>
+    <input name="colorPrint"  placeholder="  1:需要 0:不需要" />
+  </view>
+  <view class="form_border">
+    <label>是否双面:</label>
+    <input name="twoSided"  placeholder="  1:需要 0:不需要" />
+  </view>
+  <view class="tips">
+    <view class="tips_money">
+      <text>  黑白  : <text class="color_red"> 0.5元/张</text> </text>
+      <text>  彩印  : <text class="color_red"> 2元/张</text></text>
+      <text>跑路费  : <text class="color_red"> 3元</text></text>
+    </view>
+  </view>
+ 
+ <button hover-class="hover-button" class="button" form-type="submit">提交订单</button>
+  <button hover-class="hover-button" class="button" form-type="reset" style="margin-top: 10rpx;">重置订单</button>
+ 
+</form>
+</view>
+
+<view class="notice">用户条款&隐私策略</view>

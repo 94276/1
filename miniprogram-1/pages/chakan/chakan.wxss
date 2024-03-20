@@ -1,0 +1,59 @@
+/* pages/xunwuxq/xunwuxq.wxss */
+
+.lie{
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+  height: 150px;
+}
+.lie image{
+  width: 350px;
+  height: 350px;
+  border-radius: 45rpx;
+  display: flex;
+}
+.lie_hang{
+  margin-top: 30rpx;
+  margin-left: 227rpx;
+  font-size: 25px;
+  font-weight: bold;
+}
+.hang{
+  margin-top: 35rpx;
+  margin-left: 10rpx;
+  height: 70rpx;
+  display: flex;
+}
+.hang_title{
+  font-size: 18px;
+  font-weight: bold;
+  width: 150rpx;
+  background-color: #2b4b6b;
+  color: white;
+  border-radius: 15rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hang_content{
+  margin-left: 60rpx;
+  height: max-content;
+  width: 430rpx;
+  font-size: 18px;
+  background-color: #e9e9e9;
+  border-radius: 15rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hang_content1{
+  width: 91%;
+  height: 420rpx;
+  font-size: 18px;
+  border-style: inset;
+  border-radius: 15rpx;
+  padding: 10rpx;
+}

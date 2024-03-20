@@ -1,0 +1,35 @@
+<view >
+    <!-- 最上面一个导航栏 拼车 -->
+    <view class="nav">
+        <view class="nav-item">
+            <view class="nav-item-text">拼单成功</view>
+        </view>
+    </view>
+    <!-- 一张地图图片 -->
+    <view class="map">
+        <image src="../../image/su.png" mode="widthFix" style="width: 100%;"></image>
+    </view>
+    <!-- 一个白底的卡片 写行内样式-->
+    <view class="card_1">
+        <!-- <view class="text_1">
+            拼单成功
+        </view> -->
+        <!-- 用于存储拼单成功的信息 例如：拼单成功的人数，拼单成功的时间，拼单成功的地点 师傅名称 车牌号 -->
+        <view class="text_2">
+            成功人数：
+            <span class="text_2_1">2</span>
+        </view>
+        <view class="text_3">
+            成功时间：
+            <span class="text_3_1">2019-12-12 12:12:12</span>
+        </view>
+        <view class="text_4">
+            拼车信息：
+            <span class="text_4_1">川A12345</span>
+        </view>
+    </view>
+    <!-- 一张广告图片 -->
+    <view class="im_1">
+        <image src="../../image/su_1.png" mode="widthFix" style="width: 100%;"></image>
+    </view>
+</view>

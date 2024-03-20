@@ -1,0 +1,102 @@
+/* pages/test/test.wxss */
+.container{
+  background-color: #fff;
+  width: 90%;
+  height:90%;
+  margin: 30rpx auto;
+  border-radius:30rpx;
+  box-shadow: 0 0 15rpx #a1a1a1;
+  padding:40rpx 25rpx 25rpx 25rpx;
+}
+
+.container .form_border{
+  text-align: center;
+}
+
+.container .form_border{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid #d1d1d1;
+  font-size:35rpx;
+}
+
+.container .form_border label{
+  text-align:left;
+  font-size:30rpx;
+}
+
+.container .form_border input{
+  text-align:right;
+  font-size:30rpx;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20rpx 0;
+  margin: 0 auto;
+  border-bottom: 2rpx solid #d1d1d1;
+  align-items: center;
+}
+
+.item text{
+  text-align:left;
+  font-size:30rpx;
+}
+
+.item .addImage {
+  font-size: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border: 1rpx dashed #000;
+}
+
+.item .addImage image {
+  width: 100%;
+  height: 100%;
+}
+
+.color_red {
+  color: #f00;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips .tips_money {
+  display: flex;
+  flex-direction: column;
+  color: #717171;
+  font-size: 28rpx;
+  margin: 25rpx 0;
+  margin-top: 20rpx;
+}
+
+.container .button{
+  width: 100%;
+  height:80rpx;
+  background-color: #1a6fd6;
+  color:#fff;
+  font-size:35rpx;
+  border-radius: 50rpx;
+  margin-top: 25rpx;
+}
+
+.notice {
+  color: #1067D1;
+  text-align: center;
+  margin-bottom: 50rpx;
+  font-size:28rpx;
+}

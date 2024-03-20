@@ -1,0 +1,11 @@
+<!--pages/shiwuzhaoling/shiwuzhaoling.wxml-->
+<view class="title">
+  <image src="/image/shiwuzhaoling.jpg" mode="aspectFit"></image>
+</view>
+<view class="buttonclass">
+  <button bindtap="jump1"><image src="/image/button-1.png" mode="aspectFit" ></image>寻物启事</button>
+  <button bindtap="jump2"><image src="/image/button-2.png" mode="aspectFit" ></image>失物招领</button>
+  <button bindtap="jump3"><image src="/image/button-3.png" mode="aspectFit"></image>发布</button>
+</view>
+  
+

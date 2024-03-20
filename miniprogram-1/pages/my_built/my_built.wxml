@@ -1,0 +1,37 @@
+<!--pages/my_built/my_built.wxml-->
+<view class="order" wx:for="{{order}}" wx:key="index">
+        <view class="order_top">
+            <view class="order_left">
+                <view class="name">
+                    <text class="title">{{item.size}}\n</text>
+                    <text class="date">时间：{{item.time}}</text>
+                 </view>
+            </view>
+        </view>
+        <view class="order_content">
+            <view class="content">
+               名字：{{item.name}}
+            </view>
+            <view class="address">
+               取件码：{{item.num}}
+             </view>
+             <view class="phoneNum">
+               取件点：{{item.address1}}
+             </view>
+             <view class="phoneNum">
+               送件点：{{item.address2}}
+             </view>
+             <view class="phoneNum">
+               号码：{{item.phoneNum}}
+             </view>
+        </view>
+        <view class="order_bottom">
+             <view class="money">
+                 费用：{{item.money}}
+             </view>
+             <view class="accept">
+                  {{item.state}}
+             </view>
+        </view>
+</view>
+

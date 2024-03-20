@@ -1,0 +1,33 @@
+<scroll-view scroll-x class="scroll_view">
+    <view class="tab">
+        <view class="tab_item {{ tabNow === index ? 'select':''}}" wx:for="{{ tabList }}" data-id="{{index}}" wx:key="index" bindtab="selectTab">
+        <navigator url='{{item.page}}' hover-class="none">{{ item.name }}</navigator>          
+        </view>
+    </view>
+    <!-- <view class="tab">
+      <navigator url=''>代取快递</navigator>
+    <navigator url='../new_built/new_built'>我要发布</navigator>
+    </view> -->
+
+</scroll-view>
+
+<block wx:for="{{List}}">
+    <view class="box1">
+    <view class="top"> 
+      <view class="size">{{item.getSize}}</view>
+      <view class="buildTime">{{item.buildTime}}</view>
+    </view>   
+      <view>名字：{{item.userName}}</view>
+      <view>电话：{{item.phoneNumber}}</view>
+      <view>送达时间：{{item.getTime}}</view>
+      <view>取件码：{{item.getNumber}}</view>
+      <view>取件点：{{item.getAddress}}</view>
+      <view>送件点：{{item.putAddress}}</view>
+      <view class="bottom">
+        
+        <button>接单</button>
+        <view class="money">费用：{{item.getPrice}}</view>
+      </view>
+      
+    </view> 
+</block>

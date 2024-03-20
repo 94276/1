@@ -1,0 +1,39 @@
+<!--pages/contact/contact.wxml-->
+<!--获取用户信息-->
+<view class="container1">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button class="getbutton" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 登录 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!--订单-->
+  <view class="separate"></view>
+  <view class="order" catchtap="toOrder">
+    <text class="myorder-text">我的订单</text>
+    <text class="myorderlook-text">查看全部订单</text>
+    <image class="next-image" src="/image/箭头.png"></image>
+  </view>
+  <view class="line"></view>
+  <view class="navs">
+    <block wx:for-items="{{orderItems}}" wx:key="name">
+      <view class="nav-item" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <image src="{{item.imageurl}}" class="nav-image" />
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="separate"></view>
+  <!--功能列表-->
+  <view class="person-list">
+    <view class="person-line"></view>
+    <view class="list-item" catchtap="toAddress">
+      <image class="item-image" src="/image/dizhi.png" ></image>
+      <text class="item-text">收货地址</text>
+    </view>
+  </view>
+  <view class="separate"></view>
+</view>

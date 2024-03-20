@@ -1,0 +1,46 @@
+/* pages/del_newBuild/del_newBuild.wxss */
+/* 公共样式，子容器里每个都有下划线，行号，等 */
+.container > view{
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid rgb(196, 190, 190);
+}
+.container{
+  width: 90% ;
+  margin: 30rpx auto;
+  padding: 40rpx 0;
+  /* 不需要这个控制内边距，设置里面组件的外边距padding: 0rpx 0rpx 10rpx 0rpx; */
+  background-color: rgb(245,245,247);
+  border-radius: 20rpx;
+  box-shadow: 2rpx 0 15rpx rgb(150, 149, 149);
+  margin-bottom: 20rpx;
+}
+
+input{
+
+  margin-top: 28rpx;  
+  margin-left: 20rpx;
+}
+
+radio-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+radio{
+  margin-left: 10rpx;
+  font-size:32rpx ;
+}
+
+button{
+  display: inline-block;
+  width: 300rpx;
+  height: 100rpx;
+  margin:50rpx 37rpx;
+  background-color: #2279cf;
+  color: white; 
+  box-shadow: 2rpx 0 15rpx rgb(150, 149, 149);
+}

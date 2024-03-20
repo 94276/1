@@ -1,0 +1,69 @@
+<!--pages/pbulishxunren/publishxunren.wxml-->
+<view class="item">
+	<view class="label">物品名称：</view>
+	<view class="input-wrap">
+		<input id="title" value="{{info.title}}" bindinput="handelInput_name" class="input" placeholder="请输入物品名称（6字以内）">
+		</input>
+	</view>
+</view>
+
+<view class="item">
+	<view class="label">发生时间：</view>
+	<view class="input-wrap">
+		<picker mode="date" value="{{rawDate}}" start="2017-09-01" bindchange="bindDateChange">
+			<view class="picker">
+				<view>{{showDate.y}} 年</view>
+				<view>{{showDate.m}} 月</view>
+				<view>{{showDate.d}} 日</view>
+			</view>
+		</picker>
+	</view>
+</view>
+
+<view class="item">
+	<view class="label">拾取地点：</view>
+	<view class="input-wrap">
+		<input id="place" value="{{info.place}}" bindinput="handelInput_place" class="input" placeholder="请输入拾取地点">
+		</input>
+	</view>
+</view>
+
+<view class="item">
+	<view class="label">联系方式：</view>
+	<view class="input-wrap">
+		<input id="place" value="{{info.place}}" bindinput="handelInput_contact" class="input" placeholder="请输入联系方式">
+		</input>
+	</view>
+</view>
+
+<view class="item">
+	<view class="label">物品描述</view>
+	<view class="input-wrap">
+		<textarea id="desc" value="{{info.desc}}" bindinput="handelInput_note" placeholder="请输入物品描述（300字以内）" maxlength="300"></textarea>
+	</view>
+</view>
+
+<view class="item">
+	<view class="label">物品图片：</view>
+	<view class="input-wrap">
+		<view class="imgs-wrap">
+			<block wx:for="{{tmpImgs}}" wx:key="*this">
+				<view class="img-item">
+					<image mode="aspectFill" src="{{item}}"></image>
+					<view catchtap="delPic" data-index="{{index}}" class="img-del"></view>
+				</view>
+			</block>
+			<block wx:if="{{tmpImgs.length < 3}}">
+				<view class="img-item" bindtap="selcetPics">
+					<image class="sel-pic" mode="aspectFit" src="../../images/upload.svg"></image>
+				</view>
+			</block>
+		</view>
+	</view>
+  <button bindtap="addImage">选择图片并上传</button>
+</view>
+
+<view class="item">
+	<button bindtap="addData" class="submit-btn">提交</button>
+</view>
+

@@ -1,0 +1,25 @@
+<!--pages/chakan/chakan.wxml-->
+<!--/image/unbre.jpg-->
+<view class="lie">
+  <image src="{{detail.image}}" mode="aspectFill"></image>
+
+
+  <view class="lie_hang">
+    <view class="namebox">{{detail.name}}</view>
+  </view>
+  <view class="hang">
+    <view class="hang_title">拾取时间</view>
+    <view class="hang_content">{{detail.date}}</view>
+  </view>
+  <view class="hang">
+    <view class="hang_title">遗失地点</view>
+    <view class="hang_content">{{detail.place}}</view>
+  </view>
+  <view class="hang">
+    <view class="hang_title">联系方式</view>
+    <view class="hang_content">{{detail.contact}}</view>
+  </view>
+  <view class="hang">
+    <view class="hang_content1">{{detail.note}}</view>
+  </view>
+</view>

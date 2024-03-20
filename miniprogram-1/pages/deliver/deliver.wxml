@@ -1,0 +1,54 @@
+<view class="container">
+<form bindsubmit="bindSubmit">
+  <view class="title">递送类型</view>
+  <view class="type">
+    <view class="{{ typeNow === index ? 'selectType' : '' }}" wx:for="{{ typeList }}" wx:key="index" data-id="{{ index }}" data-tip="{{ item.tips }}" bindtap="selectType">{{ item.name }}</view>
+  </view>
+  <view class="form_border">
+    <label>取货地址:</label>
+    <input name="getAdress"  placeholder="  请填写取获地址" />
+  </view>
+  <view class="form_border">
+    <label>收货地址:</label>
+    <input name="putAdress"  placeholder="  请填写收获地址" />
+  </view>
+  <view class="form_border">
+    <label>用户要求:</label>
+    <input name="require"  placeholder="  您的需求是" />
+  </view>
+  <view class="form_border">
+    <label>送货距离:</label>
+    <input name="distance"  placeholder="  请填写送货距离" />
+  </view>
+  <view class="form_border">
+    <label>期望送达:</label>
+    <input name="time"  placeholder="  请输入期望送达时间" />
+  </view>
+  <view class="form_border">
+    <label>性别限制:</label>
+    <input name="gender"  placeholder="  请输入送货员性别" />
+  </view>
+  <view class="form_border">
+    <label>加急打赏:</label>
+    <input name="addPrice" placeholder="  请输入加急打赏金额" />
+  </view>
+  <view class="form_border">
+    <label>备注信息:</label>
+    <input name="remarks"  placeholder="  请填写您的备注" />
+  </view>
+  <view class="tips">
+    <view class="tips_money">
+      <text> 跑路费  : <text class="color_red"> 2元起步</text></text>
+      <text> 距离超过3km  : <text class="color_red"> 4元/km </text></text>
+    </view>
+  </view>
+ 
+ <button hover-class="hover-button" class="button" form-type="submit">提交订单</button>
+  <button hover-class="hover-button" class="button" form-type="reset" style="margin-top: 10rpx;">重置订单</button>
+ 
+</form>
+
+<view class="notice">用户条款&隐私策略</view>
+</view>
+
+

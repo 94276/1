@@ -1,0 +1,35 @@
+<!--pages/address/address.wxml-->
+<!--没有地址信息-->
+<view class="no-content" wx:if="{{addressList.length==0}}">
+  <view class="imgbox">
+    <image style="width:600rpx;" src="/image/暂无订单.png" mode="widthFix"></image>
+    <view>暂无地址信息</view>
+  </view>
+</view>
+<!--地址列表-->
+<view wx:else class="address-list" bindtap="selectAddress">
+  <view class="address-item" wx:for="{{addressList}}" >
+    <view class="item-top">{{item.name}} {{item.mobile}}</view>
+    <view class="item-content">{{item.Address}}</view>
+    <view class="item-bottom">
+      <view class="left" catchtap="clickDefault" data-index="{{index}}">
+        <icon type="{{item.isDefault?'success':'circle'}}" size="15"></icon>
+        <view>设为默认地址</view>
+      </view>
+      <view class="right">
+        <view class="txt" catchtap="clickDelete" data-index="{{index}}">删除</view>
+        <view class="txt" catchtap="clickEdit" data-index="{{index}}">编辑</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!--添加地址-->
+<view class="line"></view>
+<view class = "add" bindtap = "addAddress">
+  <image  class = "left-img" src = "/image/增加.png" mode = "widthFix" />
+  <view class = "text">新增个人地址</view>
+  <image class="right-img" src = "/image/箭头.png" mode = "widthFix" />
+</view>
+

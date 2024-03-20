@@ -1,0 +1,52 @@
+/* pages/ADD_address/ADD_address.wxss */
+.weui-cells{
+  display: flex;
+  margin-bottom: 95rpx;
+  flex-direction: column;
+}
+.weui-cell{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  background: #f3f2f2;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.content{
+  margin: 6rpx 20rpx;
+  border-radius: 10rpx;
+}
+.lable-txt{
+  width:130rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.input-txt{
+  font-size: 26rpx;
+}
+.input-placecholder{
+  font-size: 26rpx;
+  color: #dcdcdd;
+}
+.check-default{
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}
+.check-default icon{
+  margin-right: 10rpx;
+}
+.add-address{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 60rpx;
+  width:80%;
+  height: 75rpx;
+  border: 1rpx solid #ff6700;
+  background-origin: 5rpx;
+  font-size: 28rpx;
+  color:#ff6700;
+}

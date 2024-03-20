@@ -1,0 +1,355 @@
+<!--pages/order1/order1.wxml-->
+
+<scroll-view scroll-x class="scroll_view">
+    <view class="tab">
+        <view class="tab_item {{ tabNow === index ? 'select' : '' }}" wx:for="{{ tabList }}" data-id="{{ index }}" wx:key="index" bindtap="selectTab">
+            {{ item }}
+        </view>
+    </view>
+</scroll-view>
+
+<view wx:if="{{ tabNow === 0 }}" class="body">
+    <view class="tips">
+        向上拖动更新信息~~~
+    </view>
+    <view class="order" wx:for="{{ daiquOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>快递代取</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+           <view class="content">
+            取货地址：{{ item.getAddress }}
+            </view>
+            <view class="content">
+            收货地址：{{ item.putAddress }}
+            </view>
+           <view class="content">
+            取件码：{{ item.getNumber }}
+            </view>
+            <view class="content">
+            快递大小：{{ item.getSize }}
+            </view>
+            <view class="content">
+            期望送达时间：{{ item.getTime }}
+            </view>
+            <view class="content">
+            快递姓名：{{ item.userName }}
+            </view>
+            <view class="address" >
+            联系方式：{{item.phoneNumber}}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deleteDaiquOrder" data-id="{{ item._id }}">删除</button>
+            <view class="money">
+                金额 ￥{{ item.getPrice }}
+            </view>
+        </view>
+    </view>
+    <view class="order" wx:for="{{ paotuiOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>跑腿</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+          <view class="content">
+            取货地址：{{ item.getAddress }}
+            </view>
+            <view class="content">
+            收货地址：{{ item.putAddress }}
+            </view>
+          <view class="content">
+            跑腿类型：{{ item.kindDeliver }}
+            </view>
+            <view class="content">
+            期望送达时间：{{ item.time }}
+            </view>
+            <view class="content">
+            备注信息：{{ item.remarks }}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deletePaotuiOrder" data-id="{{ item._id }}">删除</button>
+            <view class="money">
+                金额 ￥{{ item.money }}
+            </view>
+        </view>
+    </view>
+    <view class="order" wx:for="{{ printOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>打印</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+          <view class="content">
+            收件地址：{{ item.getAddress }}
+            </view>
+            <view class="content">
+            打印页数：{{ item.pageNum }}
+            </view>
+          <view class="content">
+            是否彩印（1是0否）：{{ item.colorPrint }}
+            </view>
+            <view class="content">
+            是否双面打印（1是0否）：{{ item.twoSided }}
+            </view>
+            <view class="content">
+            备注信息：{{ item.remarks }}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deletePrintOrder" data-id="{{ item._id }}">删除</button>
+            <view class="money">
+                金额 ￥{{ item.money }}
+            </view>
+        </view>
+    </view>
+    <view class="order" wx:for="{{ shiwuzhaolingOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>失物招领</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+            <view class="content">
+                物品名称：{{ item.name }}
+            </view>
+            <view class="content">
+                拾取地点：{{ item.place }}
+            </view>
+            <view class="content">
+                物品描述：{{ item.note }}
+            </view>
+            <view class="address" >
+                联系方式：{{item.contact}}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deleteShiwuOrder" data-id="{{ item._id }}">删除</button>
+        </view>
+    </view>
+    <view class="order" wx:for="{{ xunwuOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>寻物启事</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+            <view class="content">
+                物品名称：{{ item.name }}
+            </view>
+            <view class="content">
+                物品描述：{{ item.note }}
+            </view>
+            <view class="address" >
+                联系方式：{{item.contact}}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deleteXunwuOrder" data-id="{{ item._id }}">删除</button>
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{ tabNow === 1 }}" class="body">
+    <view class="tips">
+        向上拖动更新信息~~~
+    </view>
+    <view class="order" wx:for="{{ daiquOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>快递代取</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+           <view class="content">
+            取货地址：{{ item.getAddress }}
+            </view>
+            <view class="content">
+            收货地址：{{ item.putAddress }}
+            </view>
+           <view class="content">
+            取件码：{{ item.getNumber }}
+            </view>
+            <view class="content">
+            快递大小：{{ item.getSize }}
+            </view>
+            <view class="content">
+            期望送达时间：{{ item.getTime }}
+            </view>
+            <view class="content">
+            快递姓名：{{ item.userName }}
+            </view>
+            <view class="address" >
+            联系方式：{{item.phoneNumber}}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deleteDaiquOrder" data-id="{{ item._id }}">删除</button>
+            <view class="money">
+                金额 ￥{{ item.getPrice }}
+            </view>
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{ tabNow === 2 }}" class="body">
+    <view class="tips">
+        向上拖动更新信息~~~
+    </view>
+    <view class="order" wx:for="{{ paotuiOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>跑腿</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+          <view class="content">
+            取货地址：{{ item.getAddress }}
+            </view>
+            <view class="content">
+            收货地址：{{ item.putAddress }}
+            </view>
+          <view class="content">
+            跑腿类型：{{ item.kindDeliver }}
+            </view>
+            <view class="content">
+            期望送达时间：{{ item.time }}
+            </view>
+            <view class="content">
+            备注信息：{{ item.remarks }}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deletePaotuiOrder" data-id="{{ item._id }}">删除</button>
+            <view class="money">
+                金额 ￥{{ item.money }}
+            </view>
+        </view>
+    </view>
+    <view class="order" wx:for="{{ printOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>打印</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+          <view class="content">
+            收件地址：{{ item.getAddress }}
+            </view>
+            <view class="content">
+            打印页数：{{ item.pageNum }}
+            </view>
+          <view class="content">
+            是否彩印（1是0否）：{{ item.colorPrint }}
+            </view>
+            <view class="content">
+            是否双面打印（1是0否）：{{ item.twoSided }}
+            </view>
+            <view class="content">
+            备注信息：{{ item.remarks }}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deletePrintOrder" data-id="{{ item._id }}">删除</button>
+            <view class="money">
+                金额 ￥{{ item.money }}
+            </view>
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{ tabNow === 3 }}" class="body">
+    <view class="tips">
+        向上拖动更新信息~~~
+    </view>
+    <view class="order" wx:for="{{ shiwuzhaolingOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>失物招领</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+            <view class="content">
+                物品名称：{{ item.name }}
+            </view>
+            <view class="content">
+                拾取地点：{{ item.place }}
+            </view>
+            <view class="content">
+                物品描述：{{ item.note }}
+            </view>
+            <view class="address" >
+                联系方式：{{item.contact}}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deleteShiwuOrder" data-id="{{ item._id }}">删除</button>
+        </view>
+    </view>
+    <view class="order" wx:for="{{ xunwuOrder }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ avatarUrl }}"></image>
+                <view class="name">
+                    <text>寻物启事</text>
+                    <text>{{ item.createtime }}</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_content">
+            <view class="content">
+                物品名称：{{ item.name }}
+            </view>
+            <view class="content">
+                物品描述：{{ item.note }}
+            </view>
+            <view class="address" >
+                联系方式：{{item.contact}}
+            </view>
+        </view>
+        <view class="order_bottom">
+          <button class="delete" size="mini" style="margin-right: 20rpx;" bindtap="deleteXunwuOrder" data-id="{{ item._id }}">删除</button>
+        </view>
+    </view>
+</view>

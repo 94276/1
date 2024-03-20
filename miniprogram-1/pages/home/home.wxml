@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+<!--图片区域-->
+<view class="img-box">
+  <image src="/image/华侨大学.png" mode="widthFix"></image>
+ </view>
+
+<text>\n</text>
+<!--文本显示区域-->
+<view class="text-box">
+<view class="line"></view>
+<text class="text">想做点什么</text>
+</view>
+
+<text>\n\n</text>
+<!--按钮区域-->
+<view class="button">
+  <button class="bnt1" bindtap="gotoExpress_collection">
+   <image class="bnt1img "src="/image/代取快递.png"></image>快递代取
+   </button>
+  <button class="bnt2" bindtap="gotoCampus_running">
+    <image class="bnt2img "src="/image/校园跑腿.png"></image>校园跑腿
+    </button>
+
+  <button class="bnt3" bindtap="gotoLost_and_Found"> 
+    <image class="bnt3img "src="/image/失物招领.png"></image>失物招领
+  </button>
+</view>

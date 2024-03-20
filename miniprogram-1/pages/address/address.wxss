@@ -1,0 +1,86 @@
+/* pages/address/address.wxss */
+/*没有地址信息*/
+.imgbox{
+  text-align: center;
+}
+/*添加地址*/
+.add{
+  overflow: hidden;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.left-img{
+  width:60rpx;
+  position: relative;
+  left: 20rpx;
+}
+.text{
+  position: relative;
+  left:80rpx;
+  display: fixed;
+  top: 8rpx;
+}
+.right-img{
+  width: 50rpx;
+  align-items: right;
+  position: relative;
+  left:400rpx;
+}
+.line{
+  width: 100%;
+  height: 2rpx;
+  background: lightgray;
+  position: fixed;
+  bottom: 100rpx;
+}
+
+/*地址列表*/
+.address-list{
+  display: flex;
+  margin-bottom: 95rpx;
+  flex-direction: column;
+}
+.address-item{
+  display: flex;
+  flex-direction: column;
+  margin: 6rpx 20rpx;
+  padding: 20rpx 20rpx 10rpx 20rpx;
+  border-radius: 10rpx;
+  background: #f3f2f2;
+}
+.item-top{
+  font-size: 28rpx;
+  color: #333;
+}
+.item-content{
+  font-size: 24rpx;
+  color: #999;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.item-bottom{
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #999;
+}
+.left{
+  justify-content: flex-start;
+  display: flex;
+  inline-size: auto;
+}
+.item-bottom .right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  inline-size: auto;
+  left:300rpx;
+}
+.item-bottom .right .txt{
+  padding:0 10rpx;
+}

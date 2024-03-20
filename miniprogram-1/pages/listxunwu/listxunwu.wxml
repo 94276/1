@@ -1,0 +1,17 @@
+<!--pages/listxunwu/listxunwu.wxml-->
+
+<view class="search">
+  <searchbar  placeholder="请输入关键字"  bind:handleSearch="handleSearch"></searchbar>
+</view>
+<view class="hang" wx:for="{{datalist_xunwu}}" wx:key="index" bindtap="goxunwuxq"  data-item="{{item}}">
+  <image src="{{item.image}}" mode="aspectFill" ></image>
+  <view class="lie">
+    <view class="name">{{item.name}}</view>
+    <view class="time">{{item.date}}</view>
+    <view class="place">{{item.note}}</view>
+  </view>
+  <button>查看</button>
+</view>
+<view class="buttom-promt">
+  已经到底了
+</view>

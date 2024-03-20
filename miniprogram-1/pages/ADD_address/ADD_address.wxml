@@ -1,0 +1,32 @@
+<!--pages/ADD_address/ADD_address.wxml-->
+<!--地址创建和编辑-->
+
+<view class="weui-cells content">
+  <view class="weui-cell">
+    <view class="weui-lable lable-txt">姓名</view>
+    <view class="weui-cell_bd">
+      <input class="weui-input input-txt" placeholder-class="input-placeholder" placeholder="收货人姓名" value="{{address.name}}" bindinput="inputName"/>
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-lable lable-txt">手机号</view>
+    <view class="weui-cell_bd">
+      <input class="weui-input input-txt" placeholder-class="input-placeholder" placeholder="收货人手机号" value="{{address.mobile}}" bindinput="inputMobile"/>
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-lable lable-txt">详细地址</view>
+    <view class="weui-cell_bd">
+      <input class="weui-input input-txt" placeholder-class="input-placeholder" placeholder="详细地址（例：凤凰苑2号楼）" value="{{address.Address}}" bindinput="inputAddress"/>
+    </view>
+  </view>
+</view>
+
+<view class="check-default" bindtap="clickDefault" data-index="{{index}}">
+  <icon type="{{address.isDefault?'success':'circle'}}" size="15"></icon>
+  <view>设为默认地址</view>
+</view>
+
+<view class = "add-address" bindtap = "addAddress">
+  <view class = "text">保存并使用</view>
+</view>

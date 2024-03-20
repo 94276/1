@@ -1,0 +1,10 @@
+<!--pages/campusRunning/campusRunning.wxml-->
+<view class="container">
+  <view class="title">选择服务</view>
+  <view class="type" wx:for="{{ runningConfig }}"  wx:key="index" bindtap="toDetail" data-url="{{ item.url }}" data-name="{{ item.text }}">
+      <view class="icon">
+        <image src="{{ item.icon}}"></image>
+      </view>
+      <view class="text">{{ item.text }}</view>
+  </view> 
+</view>

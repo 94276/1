@@ -1,0 +1,9 @@
+<!--compones/top/top.wxml-->
+<scroll-view scroll-x class="scroll_view">
+    <view class="tab">
+        <view class="tab_item {{ tabNow === index ? 'select':''}}" wx:for="{{ tabList }}" data-id="{{index}}" wx:key="index" bindtab="selectTab">
+        <navigator url='{{item.page}}' hover-class="none">{{ item.name }}</navigator>          
+        </view>
+    </view>
+
+</scroll-view>

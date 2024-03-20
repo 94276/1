@@ -1,0 +1,13 @@
+<!--pages/fabu/fabu.wxml-->
+<navigator class="item" hover-class="none" url="/pages/publishxunwu/pubulishxunwu">
+	<i class="iconfont icon-search"></i>
+	<view>
+		寻物启事
+	</view>
+</navigator>
+<navigator class="item"  url="/pages/pbulishxunren/publishxunren">
+	<i class="iconfont icon-gonggaoban"></i>
+	<view>
+		失物招领
+	</view>
+</navigator>

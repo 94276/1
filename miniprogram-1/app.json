@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/my/my",
+    "pages/address/address",
+    
+    "pages/ADD_address/ADD_address",
+    "pages/first/first",
+    "pages/my_run/my_run",
+    "pages/new_built/new_built",
+    "pages/my_built/my_built",
+    "pages/person/person",
+    "pages/campusRunning/campusRunning",
+    "pages/print/print",
+    "pages/lease/lease",
+    "pages/deliver/deliver",
+    "pages/addAddress/addAddress",
+    "pages/selectBuild/selectBuild",
+    "pages/shiwuzhaoling/shiwuzhaoling",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/fabu/fabu",
+    "pages/publishxunwu/pubulishxunwu",
+    "pages/pbulishxunren/publishxunren",
+    "pages/listxunwu/listxunwu",
+    "pages/listshiwu/listshiwu",
+    "pages/chakan/chakan",
+    "pages/order/order",
+    "pages/xunwuxq/xunwuxq"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "校园生活",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#99999b"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "/image/shouye.png",
+        "selectedIconPath": "/image/shouye.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/image/wode.png",
+        "selectedIconPath": "/image/wode.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

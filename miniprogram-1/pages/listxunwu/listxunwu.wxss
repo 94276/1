@@ -1,0 +1,64 @@
+/* pages/listxunwu/listxunwu.wxss */
+.search{
+  align-items: flex-start;
+}
+.hang{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 672rpx; 
+  height: 160rpx; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: justify-content;
+  flex-wrap:wrap;
+  box-shadow:0rpx 2rpx 5rpx 5rpx #c8c3c3;
+  border-radius: 45rpx;
+}
+.hang image{
+  border-radius: 45rpx;
+  height: 80px;
+  width: 100px;
+}
+.hang view{
+  box-sizing: border-box;
+  height: 45rpx;
+}
+.hang button{
+  height: 100rpx;
+  width: 140rpx;
+  text-align: center;
+  margin-top: 25rpx;
+  margin-right: 45rpx;
+  box-sizing: border-box;
+  box-shadow:0rpx 2rpx 5rpx 5rpx #f3f2f2;
+  color: white;
+  background-color:rgb(42, 97, 168);
+  /* rgb(253, 181, 46) */
+}
+.lie{
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+}
+.name{
+  font-size: 16px;
+  font-weight: bold;
+}
+.time{
+  font-size: 14px;
+  color:darkgray;
+  margin-top: 3px;
+}
+.place{
+  font-size: 14px;
+  margin-top: 3px;
+  width: 95px;
+  white-space: nowrap;/*取消换行*/
+  overflow: hidden;/*超出的部分隐藏*/
+  text-overflow: ellipsis;/*隐藏的部分用省略号代替*/
+}
+.buttom-promt{
+  margin-top: 120px;
+  text-align: center;
+  font-size: 14px;
+  color:darkgray;
+}

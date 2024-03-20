@@ -1,0 +1,23 @@
+/* compones/top/top.wxss */
+.scroll_view{
+  background-color: rgb(245, 245, 241);
+  white-space: nowrap;
+}
+
+.tab{
+  display: flex;
+  text-align: center;
+}
+
+.tab .tab_item{
+  height:90rpx;
+  display: inline-block;
+  line-height: 90rpx;
+  margin:0 auto;
+  padding: 0 20rpx;
+  flex:1;
+}
+.select{
+  color:#5b93ca;
+  border-bottom:4rpx solid #5192d3
+}

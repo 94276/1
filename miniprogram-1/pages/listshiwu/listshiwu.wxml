@@ -1,0 +1,18 @@
+<!--pages/listshiwu/listshiwu.wxml-->
+<view class="search">
+  <searchbar  placeholder="请输入关键字"  bind:handleSearch="handleSearch"></searchbar>
+</view>
+<!--数据自动拉取-->
+<view wx:for="{{datalist_shiwu}}" class="hang" wx:key="index" bindtap="gochakan"  data-item="{{item}}">
+  <image src="{{item.image}}" mode="aspectFill" ></image>
+  <view class="lie">
+    <view class="name">{{item.name}}</view>
+    <view class="time">{{item.date}}</view>
+    <view class="place">{{item.place}}</view>
+  </view>
+  <button>查看</button>
+</view>
+
+<view class="buttom-promt">
+  已经到底了
+</view>
